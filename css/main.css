@@ -213,20 +213,23 @@ p.short-email a{
     display:inline-block;
     font-size: 13px;
 	text-transform:uppercase;
-	border-left: 1px solid #eaeaea;
     border-right: 1px solid #eaeaea;
 }
 
-.menu li:first-child, .menu li:nth-child(2){
-	border-right:none;
+.menu li:first-child {
+	border-left: 1px solid #eaeaea;
 }
 
 .menu li a {
 	color: #333333;
     display: block;
     left: 1px;
-    padding: 22px 25px 20px;
+    padding: 22px 16px 20px;
     position: relative;
+}
+
+.menu li a:hover {
+	color: rgb(25, 156, 219);
 }
 
 .menu li a i {
@@ -312,6 +315,12 @@ a.mobile-btn{
 
 
 /*About section*/
+
+.two-column {
+	columns: 2;
+	-webkit-columns: 2;
+	-moz-columns: 2;
+}
 
 .block-about{
     padding: 95px 50px 46px;
@@ -1766,7 +1775,7 @@ ul.latest-post a i {
 	input, textarea{-webkit-appearance: none;-webkit-border-radius:0;}
 	.block-background-image{background-attachment: scroll;background-position:top center !important;}
 	.img-profile img{left:-15px}
-	.menu li a{padding:22px 15px 20px;}
+	.menu li a{padding:22px 10px 20px;}
 	.name-profile h5{font-size:26px;}
 	.block-about.one h5{font-size:18px;}
 	.exp-det{width:150px;}
@@ -1797,6 +1806,7 @@ ul.latest-post a i {
 	.container .col-sm-2.pd-0{width:100%;}
 	.main-nav{min-height:65px;}
 	.main-nav .menu.first{padding-top:5px;}
+	.main-nav .menu li{border: none;}
 	.main-nav .menu.second{padding-bottom:20px;}
 	a.mobile-btn{display: inline-block;position: absolute;top:23px;right:15px;z-index:1001;}
 	.main-nav ul.menu{display:none;}
@@ -1805,7 +1815,7 @@ ul.latest-post a i {
 	.name-profile h5{padding-bottom:10px;margin-left: 20px;text-align: left;position:static;}
 	.menu li{border:none;display: inline;}
 	.menu li a {display: block;left: 0;padding: 15px 8px 0;}
-	.block-about { display: block;width: 100%;}
+	/*.block-about { display: block;width: 100%;}*/
 	.block-expertise .expertise {display:inline-block; margin-right: 30px;border-right:1px solid #e6e6e6;}
 	.block-expertise .expertise:last-child{border:none;}
 	.exp-ico, .exp-det, .info-ico, .info-det{float:none;}
